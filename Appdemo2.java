@@ -21,7 +21,7 @@ public class Appdemo2 extends Applet implements ActionListener{
 		b2.addActionListener(this);
 	} 
 	public void actionPerformed(ActionEvent ae){
-		if(ae.getSource()=="b1")
+		if(ae.getSource()==b1)
 			tf1.setText("INDIA");
 		else
 			tf1.setText("");
