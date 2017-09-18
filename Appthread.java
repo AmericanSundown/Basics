@@ -19,7 +19,7 @@ public class Appthread extends Applet implements Runnable
 		//setForeground(c);
 		g.drawString("MOVE",x,y);
 		//g.drawOval(10,10,50,100);
-		a=g.fillOval(100,20,50,100);
+		g.fillOval(100,20,50,100);
 	}
 
 	public void run()
@@ -34,6 +34,7 @@ public class Appthread extends Applet implements Runnable
 				r=(int)(Math.random()*256);
 		b=(int)(Math.random()*256);
 		g=(int)(Math.random()*256);
+		a=(int)(Math.random()*256);
 		c=new Color(r,g,b);
 			try{
 				Thread.sleep(300);
